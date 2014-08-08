@@ -1,0 +1,482 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+.float-right { float: right; }
+.float-left  { float: left; }
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+/** HOMPAGE **/
+.page-template-page-templatespage-frontpage-php {
+  #homepage-introduction {
+    margin-top: 35px;
+    background: $white;
+    #home-slider {
+      padding: 25px 0 25px 25px;
+    }
+    #welcome {
+      padding: 25px;
+      h2 {
+        font-size: 1em;
+        font-family: 'IM Fell DW Pica SC', 'serif';
+        color: $black;
+        margin: 0;
+        text-align: right;
+      }
+      p {
+        font-size: 0.8em;
+      }
+      .metaslider {
+        float: left;
+        padding-right: 25px;
+        .flexslider {
+          margin: 0 0 38px 0;
+        }
+      }
+    }
+    .image-banner {
+      background: $body;
+      height: 200px;
+    }
+    .welcome-content {
+      .margartitas-on-tap {
+        text-align: left;
+        h3 {
+          font-size: 1.35em;
+          margin: 15px 0 12px 0;
+        }
+        img {
+          width: 45%;
+          height: auto;
+          margin: 18px 0 0 0;
+        }
+        div.content {
+          width: 55%;
+        }
+      }
+    }
+  }
+}
+
+/** CONTACT US **/
+.page-template-page-templatespage-contactus-php {
+  #contact-us-content {
+    #location {
+      padding: 25px 35px;
+      h2 {
+        font-size: 1.5em;
+        margin: 10px 0;
+      }
+      h4 {
+        font-size: 0.8em;
+        margin: 0 0 12px 0;
+      }
+      .hours-of-operation {
+        span.day {
+          display: inline-block;
+          width: 60px;
+          font-weight: bold;
+          color: $text-maroon;
+        }
+      }
+      .address,
+      .hours-of-operation,
+      .email-facebook {
+        h3 {
+          font-size: 14px;
+          line-height: 1.3;
+          margin: 10px 0;
+        }
+        p {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+/** ABOUT US **/
+.page-template-page-templatespage-aboutus-php {
+  #about-us-content {
+    margin-top: 35px;
+    background: $white;
+    #welcome {
+      padding: 25px;
+      h2 {
+        font-size: 3em;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+    }
+    .about-us-feature-image {
+      width: 100%;
+      border: 4px solid $body;
+    }
+    .footer-content {
+      background: $body;
+      padding: 1em 2em;
+      div {
+        font-size: 12px;
+        min-height: 230px;
+      }
+    }
+  }
+}
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 1140px;
+  width: 100%;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+/* BIP HEADER */
+
+.header {
+  .wrap {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+  .bip-header {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    #inner-header {
+      background: transparent;
+      padding: 15px 0;
+      .float-container {
+        width: 95%;
+        margin: 0 auto;
+        img {
+          display: inline-block;
+          width: 40px;
+          position: relative;
+          margin: 10px 15px;
+        }
+      }
+      .site-title {
+        opacity: 1;
+        position: relative;
+        width: 80%;
+        float: left;
+        h1 {
+          font-family: 'IM Fell DW Pica SC', 'serif';
+          text-align: center;
+          color: $white-smoke;
+          font-size: 1.8em;
+          line-height: 1em;
+          margin: 14px 0;
+        }
+      }
+      #logo {
+        img {
+          width: 200px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    nav {
+      background: $white;
+      ul {
+        text-decoration: none;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Bitter', serif;
+        li {
+          display: inline-block;
+          text-align: center;
+          border-top: 1px solid $black;
+          border-bottom: 1px solid $black;
+          margin: 12px 18px;
+          font-size: 1em;
+          a {
+            color: $black;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+              color: $text-maroon;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+	#logo {}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+	background: #eee;
+	border: 0;
+
+	li {
+		float: left;
+		position: relative;
+
+		a {
+			border-bottom: 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				background-color: #dedede;
+
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border: 1px solid #ccc;
+			border-top: 0;
+			position: absolute;
+			display: none;
+			z-index: 8999;
+
+			li {
+
+				a {
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					border-bottom: 1px solid #ccc;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover ul {
+			top: auto;
+			display: block;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	margin-top: 2.2em;
+}
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
+
+	.widget {
+		padding: 0 10px;
+		margin: 2.2em 0;
+
+		ul {
+			li {
+				margin-bottom: 0.75em;
+
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover {}
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+

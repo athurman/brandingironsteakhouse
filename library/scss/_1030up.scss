@@ -1,0 +1,343 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+#menu-main-nav ul.sub-menu {
+  display: none;
+  width: 16%;
+  top: 95%;
+  left: 47.5%;
+}
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+/** HOMPAGE **/
+.page-template-page-templatespage-frontpage-php {
+  #homepage-introduction {
+    margin-top: 35px;
+    background: $white;
+    #home-slider {
+      padding: 25px 0 25px 25px;
+    }
+    #welcome {
+      padding: 25px;
+      h2 {
+        font-size: 1.5em;
+        font-family: 'IM Fell DW Pica SC', 'serif';
+        color: $black;
+        margin: 10px 0;
+      }
+      p {
+        font-size: 1em;
+      }
+      .metaslider {
+        float: left;
+        padding-right: 25px;
+        .flexslider {
+          margin: 0 0 38px 0;
+        }
+      }
+    }
+    .image-banner {
+      background: $body;
+    }
+    .welcome-content {
+      .margartitas-on-tap {
+        h3 {
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
+}
+
+/** ABOUT US **/
+.page-template-page-templatespage-aboutus-php {
+  #about-us-content {
+    #welcome {
+      padding: 25px 35px;
+    }
+    .footer-content {
+      div {
+        min-height: 300px;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+/** CONTACT US **/
+.page-template-page-templatespage-contactus-php {
+  #contact-us-content {
+    #location {
+      padding: 25px 35px;
+      h2 {
+        font-size: 3em;
+        margin: 10px 0;
+      }
+      h4 {
+        font-size: 0.8em;
+        margin: 0 0 12px 0;
+      }
+      .address,
+      .hours-of-operation,
+      .email-facebook {
+        h3 {
+          font-size: 1em;
+          line-height: 1.3;
+          margin: 14px 0;
+        }
+        p {
+          font-size: 1em;
+          margin: 0;
+        }
+      }
+    }
+    .hours-of-operation {
+      span.day {
+        display: inline-block;
+        width: 60px;
+        font-weight: bold;
+        color: $text-maroon;
+      }
+    }
+  }
+}
+
+/** MENU ITEMS **/
+.page-template-page-templatespage-appetizers-php {
+    #appetizer-items {
+    margin-top: 35px;
+    background: $white;
+    #header-content {
+      padding: 25px 25px 0;
+      h2 {
+        font-size: 3em;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+    }
+    .appetizers {
+      padding: 0 25px 25px;
+      .appetizer {
+        width: 85%;
+        margin: 0 auto;
+        h4 {
+          font-size: 1.3em;
+          margin: 1em 0 10px 0!important;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.page-template-page-templatespage-entrees-php {
+    #entree-items {
+    margin-top: 35px;
+    background: $white;
+    #header-content {
+      padding: 25px 25px 0;
+      h2 {
+        font-size: 3em;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+    }
+    .entrees {
+      padding: 0 25px 25px;
+      .entree {
+        width: 85%;
+        margin: 0 auto;
+        h4 {
+          font-size: 1.3em;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+        h4.entree-title {
+          width: 50%;
+        }
+        h4.entree-price {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+.page-template-page-templatespage-desserts-php {
+    #dessert-items {
+    margin-top: 35px;
+    background: $white;
+    #header-content {
+      padding: 25px 25px 0;
+      h2 {
+        font-size: 3em;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+    }
+    .desserts {
+      padding: 0 25px 25px;
+      .dessert {
+        width: 85%;
+        margin: 0 auto;
+        h4 {
+          font-size: 1.3em;
+          margin: 1em 0 10px 0!important;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.page-template-page-templatespage-specials-php {
+    #special-items {
+    margin-top: 35px;
+    background: $white;
+    #header-content {
+      padding: 25px 25px 0;
+      h2 {
+        font-size: 3em;
+      }
+      h4 {
+        font-size: 1.5em;
+      }
+    }
+    .specials {
+      padding: 0 25px 25px;
+      width: 85%;
+      margin: 0 auto;
+      .special {
+        h4 {
+          font-size: 1.3em;
+        }
+        p {
+          margin: 0;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+  width: 96%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+/* BIP HEADER */
+
+.header {
+  .wrap {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+  .bip-header {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    #inner-header {
+      border-top-left-radius: 15px;
+      -moz-border-radius-topleft: 15px;
+      border-top-right-radius: 15px;
+      -moz-border-radius-topright: 15px;
+      padding: 15px 0;
+      .float-container {
+        width: 79%;
+        margin: 0 auto;
+        img {
+          width: 40px;
+          position: relative;
+          margin: 10px 15px;
+        }
+      }
+      .site-title {
+        opacity: 1;
+        position: relative;
+        width: 82%;
+        float: left;
+        h1 {
+          font-family: 'IM Fell DW Pica SC', 'serif';
+          text-align: center;
+          color: $white-smoke;
+          font-size: 2.5em;
+          line-height: 1em;
+          margin: 10px 0;
+        }
+      }
+      #logo {
+        img {
+          width: 200px;
+          display: block;
+          margin: 0 auto;
+        }
+      }
+    }
+    nav {
+      background: $white;
+      width: 96%;
+      margin: 0 auto;
+      ul {
+        text-decoration: none;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'Bitter', serif;
+        li {
+          display: inline-block;
+          text-align: center;
+          border-top: 1px solid $black;
+          border-bottom: 1px solid $black;
+          margin: 12px 18px;
+          a {
+            color: $black;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+              color: $text-maroon;
+            }
+          }
+        }
+      }
+    }
+  }
+}
