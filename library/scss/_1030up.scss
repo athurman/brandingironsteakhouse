@@ -13,7 +13,7 @@ be seen on the Desktop.
   display: none;
   width: 16%;
   top: 95%;
-  left: 47.5%;
+  left: 55.5%;
 }
 
 /********************
@@ -35,7 +35,8 @@ style a page via class
         font-size: 1.5em;
         font-family: 'IM Fell DW Pica SC', 'serif';
         color: $black;
-        margin: 10px 0;
+        margin: 10px 55px 10px 0;
+        text-align: right;
       }
       p {
         font-size: 1em;
@@ -43,6 +44,7 @@ style a page via class
       .metaslider {
         float: left;
         padding-right: 25px;
+        max-width: 600px!important;
         .flexslider {
           margin: 0 0 38px 0;
         }

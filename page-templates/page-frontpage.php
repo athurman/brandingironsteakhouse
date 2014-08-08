@@ -36,14 +36,26 @@ Template Name: Front Page
       <?php endif; ?>
     </div>
     <div class="twelvecol first image-banner">
-      <?php echo do_shortcode('[print_thumbnail_slider]');?>
+      <div class="threecol first">
+        <img src="<?php echo get_template_directory_uri(); ?>/library/images/beer-taps.JPG" />
+      </div>
+      <div class="threecol">
+        <img src="<?php echo get_template_directory_uri(); ?>/library/images/steak2.JPG" />
+      </div>
+      <div class="threecol">
+        <img src="<?php echo get_template_directory_uri(); ?>/library/images/bar-image.jpg" />
+      </div>
+      <div class="threecol last">
+        <img src="<?php echo get_template_directory_uri(); ?>/library/images/fish-fry.JPG" />
+      </div>
+      <div class="clear-both"></div>
     </div>
     <div class="twelvecol first welcome-content">
       <div class="sixcol first welcome">
         <h1>Welcome</h1>
-        <p>This is a paragraph about the restaraunt. The best food your money can buy in the northern woods.
-        This is a paragraph about the restaraunt. The best food your money can buy in the northern woods.
-      This is a paragraph about the restaraunt. The best food your money can buy in the northern woods.</p>
+        <p>We also are available for private parties, rehearsal dinners and other functions. We provide a private bar,
+          upstairs with seating for up to 40 guests or we can make arrangements for your party in the dining room, or if you
+          wish we can also arrange for you to have the entire restaurant for your gathering. <a href="<?php echo site_url().'/contact-branding-iron-steakhouse-and-pub/';?>">Contact us today for more details.</a></p>
       </div>
       <div class="sixcol last margartitas-on-tap">
         <div class="float-left content">

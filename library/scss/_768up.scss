@@ -12,6 +12,13 @@ come into play. Have fun!
 
 ******************************************************************/
 
+#menu-main-nav ul.sub-menu {
+  display: none;
+  width: 19%;
+  top: 95%;
+  left: 59%;
+}
+
 .float-right { float: right; }
 .float-left  { float: left; }
 
@@ -35,7 +42,6 @@ style a page via class
         font-family: 'IM Fell DW Pica SC', 'serif';
         color: $black;
         margin: 0;
-        text-align: right;
       }
       p {
         font-size: 0.8em;
@@ -43,6 +49,7 @@ style a page via class
       .metaslider {
         float: left;
         padding-right: 25px;
+        max-width: 405px!important;
         .flexslider {
           margin: 0 0 38px 0;
         }
@@ -50,7 +57,7 @@ style a page via class
     }
     .image-banner {
       background: $body;
-      height: 200px;
+      min-height: 200px;
     }
     .welcome-content {
       .margartitas-on-tap {
